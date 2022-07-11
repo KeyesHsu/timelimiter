@@ -16,6 +16,13 @@ Beyond a certain wait interval, a successful result is unlikely.
 * [Changelog](https://github.com/KeyesHsu/timelimiter/blob/main/CHANGELOG.md)
 
 
+## Install
+
+```sh
+pip install timelimiter
+```
+
+
 ## Usage
 1. Extend `TimeoutHandler` with `timeout` expressed in seconds。Override `_run` method。`MySQLTimeoutHandler` for example.
 
@@ -62,6 +69,13 @@ Use environment to set configuration.
 | Name                  | Description                         | Default |
 |-----------------------|-------------------------------------|---------|
 | TIME_LIMITER_CAPACITY | Max capacity for time limiter queue | 100,000 |
+
+
+## Run tests
+
+```sh
+make test
+```
 
 
 ## Author
