@@ -1,0 +1,43 @@
+# .coveragerc to control pytest coverage
+[run]
+# A list of packages or directories, the source to measure during execution
+source = system_fault_tolerance
+
+# A list of file name patterns, the files to leave out of measurement or reporting.
+omit =
+    # omit anything in a examples directory anywhere
+    */examples/*
+
+[report]
+# Regexes for lines to exclude from consideration
+exclude_lines =
+    # Have to re-enable the standard pragma
+    pragma: no cover
+
+    # Don't complain about missing debug-only code:
+    def __repr__
+    if self\.debug
+
+    # Don't complain if tests don't hit defensive assertion code:
+    raise AssertionError
+    raise NotImplementedError
+
+    # Don't complain if non-runnable code isn't run:
+    if 0:
+    if __name__ == .__main__.:
+
+    # Don't complain about abstract methods, they aren't run:
+    @(abc\.)?abstractmethod
+
+# Ignore source code that can’t be found, emitting a warning instead of an exception.
+ignore_errors = True
+
+# When running a summary report, show missing lines.
+show_missing = True
+
+# A target coverage percentage.
+fail_under = 90.00
+
+# The number of digits after the decimal point to display for reported coverage percentages.
+# This setting also affects the interpretation of the fail_under setting.
+precision = 2

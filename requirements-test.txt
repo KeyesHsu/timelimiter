@@ -1,0 +1,9 @@
+# These requirements are for development and testing only, not for production.
+-r requirements.txt
+
+bumpversion
+pre-commit
+pytest
+pytest-cov
+pylint
+black

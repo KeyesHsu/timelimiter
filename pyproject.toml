@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["timelimiter"]
+
+[project]
+name = "timelimiter"
+version = "0.1.0"
+authors = [
+    { name = "Keyes Hsu", email = "keyes.hsu@gmail.com" },
+]
+description = "Python time limiter library"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = []
+
+
+[project.optional-dependencies]
+test = [
+    "bumpversion",
+    "pre-commit",
+    "pytest",
+    "pytest-cov",
+    "pylint",
+    "black"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/KeyesHsu/timelimiter"
+"Bug Tracker" = "https://github.com/KeyesHsu/timelimiter/issues"
+
+
+[tool.black]
+line-length = 79
+target-version = ['py37']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+
+  # The following are specific to Black, you probably don't want those.
+  | blib2to3
+  | tests/data
+)/
+'''
