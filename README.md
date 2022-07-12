@@ -16,6 +16,7 @@ Python time limit library, using event loop to schedule job.
 
 ##### Resources:
 * [Changelog](https://github.com/KeyesHsu/timelimiter/blob/main/CHANGELOG.md)
+* [PyPI](https://pypi.org/project/timelimiter/)
 
 
 ## Install
