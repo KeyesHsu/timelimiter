@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to timelimiter </h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="PyPI" src="https://img.shields.io/pypi/v/timelimiter">
   <img alt="Python" src="https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10-blue"/>
   <a href="https://github.com/KeyesHsu/timelimiter/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
@@ -11,9 +11,8 @@
 </p>
 
 
-Python time limiter library.
+Python time limit library, using event loop to schedule job.
 
-Beyond a certain wait interval, a successful result is unlikely.
 
 ##### Resources:
 * [Changelog](https://github.com/KeyesHsu/timelimiter/blob/main/CHANGELOG.md)
