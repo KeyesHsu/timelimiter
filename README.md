@@ -5,6 +5,9 @@
   <a href="https://github.com/KeyesHsu/timelimiter/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
+  <a href="https://codecov.io/gh/KeyesHsu/timelimiter" > 
+    <img alt="codecov" src="https://codecov.io/gh/KeyesHsu/timelimiter/branch/main/graph/badge.svg?token=OV7YT73BHY"/> 
+ </a>
 </p>
 
 
