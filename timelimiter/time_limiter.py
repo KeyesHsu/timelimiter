@@ -47,14 +47,12 @@ class TimeLimiter:
             # main thread, mysql thread id for example.
             # Create handler and register handler to be run.
             handler = self._handler_factory.create_handler()
-            loop_handle = register_handler(handler)
+            register_handler(handler)
 
             try:
                 # Run actually function
                 result = func(*args, **kwargs)
             finally:
-                # Cancel event loop handle
-                loop_handle.cancel()
                 # Cancel timeout handler after func run
                 handler.cancel()
             return result

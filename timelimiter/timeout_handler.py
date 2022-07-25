@@ -101,13 +101,13 @@ class TimeoutHandler:
         return f"TimeoutHandler[{self.timeout}s]"
 
 
-def register_handler(handler: TimeoutHandler) -> Handle:
+def register_handler(handler: TimeoutHandler):
     """Register handler to scheduler
     """
     # Use event loop scheduler event
     from timelimiter.event_loop import event_loop_register
 
-    return event_loop_register(handler)
+    event_loop_register(handler)
 
 
 class TimeoutHandlerFactory:

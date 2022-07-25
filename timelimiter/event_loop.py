@@ -43,10 +43,10 @@ def start_loop():
     ).start()
 
 
-def event_loop_register(handler: TimeoutHandler) -> Handle:
+def event_loop_register(handler: TimeoutHandler):
     """Register event to event loop scheduler
     """
-    return default_loop.call_soon_threadsafe(
+    default_loop.call_soon_threadsafe(
         functools.partial(schedule_handler, handler)
     )
 
