@@ -8,6 +8,9 @@
   <a href="https://codecov.io/gh/KeyesHsu/timelimiter" > 
     <img alt="codecov" src="https://codecov.io/gh/KeyesHsu/timelimiter/branch/main/graph/badge.svg?token=OV7YT73BHY"/> 
  </a>
+  <a href="https://github.com/KeyesHsu/timelimiter/actions/workflows/test.yml">
+    <img alt="Tests" src="https://github.com/KeyesHsu/timelimiter/actions/workflows/test.yml/badge.svg?branch=main">
+  </a>
 </p>
 
 
